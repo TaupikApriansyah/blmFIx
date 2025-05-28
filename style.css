@@ -1,0 +1,320 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
+  position: relative;
+ 
+}
+
+/* Google Fonts */
+h1, h2, h3 {
+  font-family: 'Great Vibes', cursive;
+  color: #b34a30;
+  text-shadow: 1px 1px 2px #d1bfa7;
+  margin-bottom: 0.2em;
+}
+
+/* Parallax Section */
+#hero {
+  position: relative;
+  background-image: url('img/2.jpeg'); 
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+/* Undangan Section */
+#invitation {
+  background-color: #f0e68c;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 15px rgba(176, 138, 70, 0.5);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#invitation .invitation-content {
+  max-width: 600px;
+  width: 100%;
+}
+
+#invitation p,
+#invitation h3 {
+  margin: 10px 0;
+}
+
+#openInvitation {
+  padding: 12px 25px;
+  background-color: #b34a30;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#openInvitation:hover {
+  background-color: #7d2c22;
+}
+
+/* Main Content visibility */
+#mainContent.hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#mainContent.visible {
+  display: block;
+  padding: 20px;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Countdown Timer */
+#countdown {
+  background-color: #ffe4e1;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+#timer span {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #c94f4f;
+}
+
+/* Quote Section */
+#quote {
+  font-style: italic;
+  margin: 20px 0 30px;
+  font-size: 1.1rem;
+  color: #6e4a47;
+  text-align: center;
+}
+
+/* Couple Section */
+#couple {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.person {
+  width: 45%;
+  background: #fef6f0;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(179, 74, 48, 0.3);
+  margin: 10px 0;
+  text-align: center;
+}
+
+.person h4 {
+  font-family: 'Great Vibes', cursive;
+  color: #b34a30;
+  margin-bottom: 5px;
+}
+
+.person h5 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #5a302a;
+}
+
+/* Event Section */
+#event {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#event h3 {
+  margin-top: 10px;
+  font-family: 'Great Vibes', cursive;
+  color: #b34a30;
+}
+
+#event p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+/* Live Streaming Section */
+#livestream {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#livestream a {
+  color: #b34a30;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #b34a30;
+  padding: 8px 15px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+#livestream a:hover {
+  background-color: #b34a30;
+  color: white;
+}
+
+/* Love Story Section */
+#love-story ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+#love-story li {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #5a302a;
+}
+
+/* Gallery Section */
+#gallery {
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(179, 74, 48, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #b34a30;
+}
+
+/* Gift Section */
+#gift {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #5a302a;
+}
+
+/* RSVP Section */
+#rsvp {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+#rsvpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rsvpForm label,
+#rsvpForm input,
+#rsvpForm select,
+#rsvpForm button {
+  margin: 10px 0;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1rem;
+}
+
+#rsvpForm input,
+#rsvpForm select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#rsvpForm button {
+  padding: 12px 25px;
+  background-color: #b34a30;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+#rsvpForm button:hover {
+  background-color: #7d2c22;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6e4a47;
+  margin-bottom: 40px;
+}
+
+/* Music Toggle Button */
+#musicToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #b34a30;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(179, 74, 48, 0.7);
+  z-index: 9999;
+}  
+

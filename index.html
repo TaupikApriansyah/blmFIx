@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Undangan Pernikahan Yandi & Nurul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Parallax Section -->
+  <section id="hero" class="parallax">
+    <div class="hero-content">
+      <h1>The Wedding Of</h1>
+      <h2>Yandi & Nurul</h2>
+      <p>15 Juni 2025</p>
+    </div>
+  </section>
+
+  <!-- Undangan Section -->
+  <section id="invitation">
+    <div class="invitation-content">
+      <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+      <button id="openInvitation">Buka Undangan</button>
+    </div>
+  </section>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="music/MUARA - ADERA - LIRIK LAGU 2023 - LAGU PERNIKAHAN 2024.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main id="mainContent" class="hidden">
+    <!-- Countdown Timer -->
+    <section id="countdown">
+      <h3>Hitung Mundur</h3>
+      <div id="timer">
+        <span id="days">0</span> Hari
+        <span id="hours">0</span> Jam
+        <span id="minutes">0</span> Menit
+        <span id="seconds">0</span> Detik
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section id="quote">
+      <p>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri..."</p>
+      <p><em>Q.S Ar-Rum : 21</em></p>
+    </section>
+
+    <!-- Couple Section -->
+    <section id="couple">
+      <div class="person">
+        <h4>Mempelai Pria</h4>
+        <h5>Yandi Sultandi, S.E</h5>
+        <p>Putri Ketiga dari Bpk Ade Sunendar dan Ibu Mimin Mintarsih</p>
+      </div>
+      <div class="person">
+        <h4>Mempelai Wanita</h4>
+        <h5>Nurul fitria</h5>
+        <p>Putri Keempat dari Bpk Lili Sadili dan Ibu Ida Jubaedah</p>
+      </div>
+    </section>
+
+    <!-- Event Section -->
+    <section id="event">
+      <h3>Akad Nikah</h3>
+      <p>Minggu, 15 juni 2025</p>
+      <p>08.00 s/d Selesai</p>
+      <p>Cafe My Bowl, kp. Sabandar Kidul,Sabandar,Karang Tengah,Cianjur</p>
+
+      <h3>Resepsi</h3>
+      <p>Minggu, 15 Juni 2025</p>
+      <p>10.00 s/d Selesai</p>
+      <p>Cafe My Bowl, kp. Sabandar Kidul,Sabandar,Karang Tengah,Cianjur</p>
+    </section>
+
+    <!-- Livestream Section -->
+    <section id="livestream">
+      <h3>Live Streaming</h3>
+      <p>Temui kami secara virtual melalui link berikut:</p>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Lihat Live Streaming</a>
+    </section>
+
+    <!-- Love Story Section -->
+    <section id="love-story">
+      <h3>Love Story</h3>
+      <ul>
+        <li><strong>1945:</strong> Gatau</li>
+        <li><strong>1980:</strong> Gatau</li>
+        <li><strong>1990:</strong> Gatau</li>
+      </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h3>Our Moments</h3>
+      <div class="gallery-grid">
+        <img src="img/1.jpeg" alt="Moment 1" />
+        <img src="img/2.jpeg" alt="Moment 2" />
+        <img src="img/3.jpeg" alt="Moment 3" />
+      </div>
+    </section>
+
+    <!-- Gift Section -->
+    <section id="gift">
+      <h3>Wedding Gift</h3>
+      <p>Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.</p>
+      <p>Jika memberi adalah ungkapan tanda kasih, Anda dapat memberi melalui:</p>
+      <p>No Rekening: 0brapa a.n. Yandi Sultandi, S.E</p>
+      <p>No Rekening: 0brapa a.n. Nurul Fitria</p>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp">
+      <h3>Ucapan & RSVP</h3>
+      <form id="rsvpForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required minlength="2" />
+
+        <label for="attendance">Konfirmasi Kehadiran:</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">Pilih</option>
+          <option value="yes">Hadir</option>
+          <option value="no">Tidak Hadir</option>
+        </select>
+
+        <label for="guests">Jumlah Tamu:</label>
+        <select id="guests" name="guests" required>
+          <option value="">Pilih</option>
+          <option value="1">1 Orang</option>
+          <option value="2">2 Orang</option>
+        </select>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Terima kasih atas doa dan restu Anda.</p>
+      <p>Wassalamu’alaikum warahmatullahi wabarakatuh</p>
+      <p>Hormat kami,Yandi & Nurul</p>
+    </footer>
+  </main>
+
+  <!-- Background Music Controls -->
+  <button id="musicToggle" aria-label="Play/Pause Musik" title="Putar Musik" hidden>▶️</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
